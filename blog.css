@@ -249,10 +249,11 @@ width: 312px;
       body{
         margin: 0;
         padding: 0;
+       
       }
       .headings-and-banner{
         flex-direction: column;
-        width:500px ;
+        width:1000px ;
         height: 0%;
         background-color: #e71b1b;
        margin-left: 60px;
@@ -279,37 +280,41 @@ width: 312px;
       }
        */
        .container {
-        display: flex;
-        flex-direction: row;
-         margin-left: -60px;  
+        /* display: flex; */
+        display: grid;
+        /* height: 2000px; */
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        align-items: center;
+         margin-right: -900px;  
         
       
     }
     .articles{
     
-        display: grid;
-        height: 500px;
-        grid-template-columns: repeat(1,1fr);
-        margin-right: 50%;
-         padding: 150px; 
-        /* margin-left: 10%; */
-        
-        margin-top: 15%;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      margin-left: 500px;
+      column-gap: 10px;
+      row-gap: 10px;
+      height: 5000px;
         
 
     }
     .article{
-      width: 600px;
-      height: 600px;
-      padding: 40px;
+       width: 500px;
+      height: 500px;
+      padding: 0px;
+      /* margin-right: 700px;  */
       
     }
     .picture-of-blog{
       width: 100%;
       height: 100%;
+      margin-right: 700px;
     }
     .footer{
-      margin-top: 5800px;
+      margin-top: 7000px;
       height: 300px;
       width: 900px;
      margin-left: -10px;
@@ -344,11 +349,15 @@ width: 312px;
      .headings-and-banner{
       width: 170%;
       height: 100%;
+      
       /* margin-left: 30%; */
      }
+     
      .item{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      
+justify-content: center;
       width: 170%;
       background-color: aliceblue;
       align-items: center;
@@ -363,6 +372,33 @@ width: 312px;
 
       
     
+  }
+  .articles{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 500px;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .article{
+    width: 430px;
+
+  }
+  .footer{
+    margin-top: 1500px;
+    height: 300px;
+    width: 1700px;
+    padding: 50px;
+    margin-left: -10px; 
+   
+  
+  }
+  .social-links{
+  margin-left: 50px; 
+    margin-right: -80px;
+  }
+  #fb-id{
+    margin-right: 0px;
   }
       
     }
