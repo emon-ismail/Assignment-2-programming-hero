@@ -248,11 +248,16 @@ width: 312px;
     @media screen and (max-width:767px) {
       .headings-and-banner{
         flex-direction: column;
-        width:100% ;
+        width:170% ;
         height: 100%;
         margin: 0;
         padding: 0;
       }
+      .item{
+        display: flex;
+        width: 100%;
+       
+       }
       .banner{
         margin-top: 30px;
         
@@ -265,7 +270,7 @@ width: 312px;
        */
        .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-left: -60px; 
         
       
@@ -308,18 +313,24 @@ width: 312px;
     /* mobile-view  end*/
     @media screen and (max-width:992px) {
      .headings-and-banner{
-      width: 80%;
-      height: 90%;
-      margin-left: 30%;
+      width: 170%;
+      height: 100%;
+      /* margin-left: 30%; */
      }
      .item{
       display: flex;
+      flex-direction: column;
+      width: 170%;
+      background-color: aliceblue;
+      align-items: center;
+      margin-left: -50px;
      
      }
      .container {
       display: flex;
       flex-direction: column;
-      margin-left: -60px; 
+      /* margin-left: -60px;  */
+      width: 130%;
 
       
     
